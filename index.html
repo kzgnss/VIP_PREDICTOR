@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VIP Predictor</title>
+  <style>
+    :root{
+      --bg:#0b0f1a;
+      --card:#0f1626;
+      --text:#eef2ff;
+      --muted:rgba(238,242,255,.72);
+      --border:rgba(255,255,255,.10);
+      --a:#7c5cff;
+      --b:#35d0ba;
+      --r:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans Arabic", Tahoma, Arial, sans-serif;
+      background:
+        radial-gradient(900px 520px at 80% -10%, rgba(124,92,255,.26), transparent 55%),
+        radial-gradient(820px 520px at 10% 0%, rgba(53,208,186,.18), transparent 55%),
+        var(--bg);
+      color:var(--text);
+      display:flex;min-height:100vh;
+      align-items:center;justify-content:center;
+      padding:18px;
+    }
+    .card{
+      width:min(520px, 100%);
+      background:rgba(255,255,255,.03);
+      border:1px solid var(--border);
+      border-radius:var(--r);
+      padding:18px;
+    }
+    .top{
+      display:flex;align-items:center;justify-content:space-between;gap:10px;
+      margin-bottom:12px;
+    }
+    .brand{font-weight:950;letter-spacing:.2px}
+    .tag{
+      font-size:12px;color:var(--muted);
+      border:1px solid var(--border);
+      padding:6px 10px;border-radius:999px;
+      background:rgba(255,255,255,.02);
+      white-space:nowrap;
+    }
+
+    h1{margin:0 0 10px;font-size:18px;color:var(--muted);font-weight:800}
+
+    /* LOUD AMOUNT */
+    .sum{
+      margin:0 0 14px;
+      font-weight:1000;
+      line-height:0.95;
+      text-align:center;
+
+      /* responsive huge size */
+      font-size: clamp(54px, 10vw, 92px);
+
+      /* gradient text */
+      background: linear-gradient(135deg, var(--b), var(--a));
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+
+      /* glow */
+      text-shadow:
+        0 0 18px rgba(53,208,186,.22),
+        0 0 32px rgba(124,92,255,.18);
+
+      /* subtle pulse */
+      animation: pulse 1.7s ease-in-out infinite;
+    }
+    @keyframes pulse{
+      0%,100%{transform:scale(1); filter:brightness(1)}
+      50%{transform:scale(1.03); filter:brightness(1.12)}
+    }
+
+    .txt{margin:0 0 14px;color:var(--muted);font-size:13.5px;text-align:center}
+
+    .btns{display:grid;gap:10px}
+    a{font:inherit}
+    .btn{
+      display:flex;align-items:center;justify-content:center;gap:10px;
+      padding:12px 14px;border-radius:14px;
+      text-decoration:none;
+      font-weight:950;
+      border:0;
+    }
+    .deposit{
+      background:linear-gradient(135deg,var(--a),#5a8cff);
+      color:white;
+    }
+    .tg{
+      background:rgba(255,255,255,.04);
+      color:var(--text);
+      border:1px solid var(--border);
+    }
+    .fine{
+      margin:12px 0 0;
+      color:rgba(238,242,255,.58);
+      font-size:11.5px;
+      line-height:1.45;
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="top">
+      <div class="brand">VIP Predictor</div>
+      <div class="tag">🇪🇬 18+</div>
+    </div>
+
+    <h1>مبلغ الإيداع المطلوب</h1>
+    <div class="sum">230 EGP</div>
+
+    <p class="txt">
+      اعمل إيداع على حسابك، وبعدها ابعت سكرينشوت على تيليجرام لتفعيل وصول VIP.
+    </p>
+
+    <div class="btns">
+      <!-- رابط صفحة الإيداع -->
+      <a class="btn deposit" href="https://reffpa.com/L?tag=d_4127419m_18607c_&site=4127419&ad=18607&r=registration" target="_blank" rel="noopener">
+        روح لصفحة الإيداع 💳
+      </a>
+
+      <!-- رابط تيليجرام للدعم/بوت -->
+      <a class="btn tg" href="https://t.me/Mohamed_Yilmaz_bot" target="_blank" rel="noopener">
+        ابعت إثبات الإيداع على تيليجرام ↗
+      </a>
+    </div>
+
+    <p class="fine">
+      مفيش ضمان ربح. ده تحليل/إشارات فقط والنتائج بتختلف. التزم بالقوانين المحلية وشروط المنصة.
+    </p>
+  </div>
+</body>
+</html>
